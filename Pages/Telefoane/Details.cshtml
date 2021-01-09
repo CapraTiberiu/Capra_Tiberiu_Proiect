@@ -1,0 +1,38 @@
+﻿@page
+@model Capra_Tiberiu_Proiect.Pages.Telefoane.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Telefon</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Telefon.Model)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telefon.Model)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Telefon.Memorie)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telefon.Memorie)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Telefon.Pret)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telefon.Pret)
+        </dd>
+     
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Telefon.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
